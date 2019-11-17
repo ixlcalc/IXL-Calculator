@@ -19,16 +19,19 @@
         })
       }
     </script>
+    <!-- Calc dependencies -->
+    <script src="../util/round.js"></script>
     <!-- Calc script -->
     <script src="j11calc.js"></script>
   </head>
   <body>
     <a href="../index.html">Back to home</a>
     <br/>
-    <h1 style="color:red">NOT YET DONE!</h1>
+    <p>Note: If it's 1 decimal off, it's usually because their own calculations is inaccurate. This tries to replicate theirs as much as possible, but there can never be enough programming to fix someone else's mistakes.<br/>Also, as of right now, the calculator does not have reorganization functionality. For equations like 1x^2 = 1x + 1, simply rearrange them to the proper format (For the given example, it would be 1x^2 - 1x - 1)</p>
     <h3 id="inputRender"></h3>
     <input id="input" oninput="transferToRender()"></input>
     <button id="btn" onclick="calc()">Calculate</button>
+    <p>Format:<br/>#x^2+#x+#<br/>#x^2+#x<br/>#x^2+x+#<br/>#x^2+x<br/>x^2+#x+#<br/>x^2+#x<br/>x^2+x+#<br/>x^2+x<br/>#x^2+#<br/>#x^2<br/>Do not include the = 0 part.</p>
     <h4 id="output"></h4>
     <!-- Enter key script -->
     <script>
