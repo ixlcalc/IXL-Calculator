@@ -23,6 +23,8 @@
     <script src="../util/round.js"></script>
     <!-- Calc script -->
     <script src="j11calc.js"></script>
+    <!-- Collapse script -->
+    <script src="../util/collapse.js"></script>
   </head>
   <body>
     <a href="../index.html">Back to home</a>
@@ -31,7 +33,11 @@
     <h3 id="inputRender"></h3>
     <input id="input" oninput="transferToRender()"></input>
     <button id="btn" onclick="calc()">Calculate</button>
-    <p>Format:<br/>#x^2+#x+#<br/>#x^2+#x<br/>#x^2+x+#<br/>#x^2+x<br/>x^2+#x+#<br/>x^2+#x<br/>x^2+x+#<br/>x^2+x<br/>#x^2+#<br/>#x^2<br/>Do not include the = 0 part.</p>
+    <br/>
+    <button onclick="collapse(this)">Functions (Click to reveal/hide)</button>
+    <div style="display:none">
+      <p>#x^2+#x+#<br/>#x^2+#x<br/>#x^2+x+#<br/>#x^2+x<br/>x^2+#x+#<br/>x^2+#x<br/>x^2+x+#<br/>x^2+x<br/>#x^2+#<br/>#x^2<br/>Do not include the = 0 part.</p>
+    </div>
     <h4 id="output"></h4>
     <!-- Enter key script -->
     <script>
