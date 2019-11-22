@@ -352,7 +352,7 @@ function calc() {
         outString += "\\text{(2) }" + tempB + letter + temp2 + winB + " {\\color{red}\\space -\\space" + winB + "}=0{\\color{red}\\space -\\space" + winB + "}"
         outString += "\\\\"
         solvedB = (winB * -1)
-        plainSolveB = solveB
+        plainSolveB = solvedB
       }
       if (tempB != "") {
         outString += "\\text{(2) }\\frac{" + tempB + letter + "}{" + tempB + "}=\\frac{" + solvedB + "}{" + tempB + "}"
